@@ -1,4 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">NMedia</string>
+    <string name="normal_map">Обычный вид</string>
+    <string name="hybrid_map">Смешанный вид</string>
+    <string name="satellite_map">Вид со спутника</string>
+    <string name="terrain_map">Вид с местности</string>
+    <string name="lat_long_snippet">Ширина и долгота сниппет</string>
+    <string name="dropped_pin">Пригвоздить</string>
+    <string name="poi">Интересное место</string>
+    <string name="cancel">Отмена</string>
+    <string name="markerDialog">Действия с маркером</string>
+    <string name="delete">Удалить маркер</string>
+    <string name="edit">Редактировать маркер</string>
+    <string name="marker_actions">Действия с маркером</string>
+    <string name="all_markers">Все маркеры</string>
+    <string name="allmarkers">Все маркеры</string>
+    <string name="save">Сохранить</string>
+    <string name="rollback">Отменить</string>
+    <string name="error_empty_content">Ошибка - контент не заполнен</string>
 </resources>

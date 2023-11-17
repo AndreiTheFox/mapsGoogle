@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/mapsFragment">
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="ru.netology.nmedia.ui.fragments.MapsFragment"
+        android:label="map"
+        tools:layout="@layout/map" >
+        <action
+            android:id="@+id/action_mapsFragment_to_allMarkersFragment"
+            app:destination="@id/allMarkersFragment" />
+        <action
+            android:id="@+id/action_mapsFragment_to_markerFragment"
+            app:destination="@id/markerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/allMarkersFragment"
+        android:name="ru.netology.nmedia.ui.fragments.AllMarkersFragment"
+        tools:layout="@layout/all_markers_fragment"
+        android:label="AllMarkersFragment" >
+        <action
+            android:id="@+id/action_allMarkersFragment_to_mapsFragment"
+            app:destination="@id/mapsFragment" />
+        <action
+            android:id="@+id/action_allMarkersFragment_to_markerFragment"
+            app:destination="@id/markerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/markerFragment"
+        tools:layout="@layout/marker_fragment"
+        android:name="ru.netology.nmedia.ui.fragments.MarkerFragment"
+        android:label="MarkerFragment" >
+        <action
+            android:id="@+id/action_markerFragment_to_allMarkersFragment"
+            app:destination="@id/allMarkersFragment" />
+        <action
+            android:id="@+id/action_markerFragment_to_mapsFragment"
+            app:destination="@id/mapsFragment" />
+    </fragment>
+</navigation>

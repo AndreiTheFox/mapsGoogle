@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">NMedia</string>
+    <string name="normal_map">Normal map</string>
+    <string name="hybrid_map">Hybrid map</string>
+    <string name="satellite_map">Satellite map</string>
+    <string name="terrain_map">Terrain map</string>
+    <string name="lat_long_snippet">Lat: %1$.5f, Long: %2$.5f</string>
+    <string name="dropped_pin">Dropped Pin</string>
+    <string name="poi">poi</string>
+    <string name="cancel">Cancel</string>
+    <string name="markerDialog">Marker actions</string>
+    <string name="delete">Delete marker</string>
+    <string name="edit">Edit marker</string>
+    <string name="marker_actions">Marker actions</string>
+    <string name="all_markers">All markers</string>
+    <string name="allmarkers">AllMarkers</string>
+    <string name="save">Save</string>
+    <string name="rollback">Rollback</string>
+    <string name="error_empty_content">Error - content is empty</string>
 </resources>
