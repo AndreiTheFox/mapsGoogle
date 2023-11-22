@@ -5,5 +5,5 @@ data class MyMarker(
     val title: String = "",
     val position: String = "",
     val tag: String = "",
-    val googleId: String =""
+//    val googleId: String =""
 )

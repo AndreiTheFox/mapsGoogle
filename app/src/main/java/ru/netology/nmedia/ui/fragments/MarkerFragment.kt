@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
+import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import ru.netology.nmedia.R
 import ru.netology.nmedia.databinding.MarkerFragmentBinding
@@ -27,9 +28,16 @@ class MarkerFragment : Fragment() {
             container,
             false
         )
+        val viewModel: MarkerViewModel by viewModels(
+            ownerProducer = ::requireParentFragment
+        )
+
+        val markerId = arguments?.getInt("markerId")
+
         binding.returnBackButton.setOnClickListener {
             findNavController().navigateUp()
         }
+
         val editText = binding.markerTagField
 
         binding.saveButton.setOnClickListener {

@@ -20,7 +20,6 @@ abstract class MarkersDB: RoomDatabase() {
         }
         private fun buildDatabase(context: Context) =
             Room.databaseBuilder(context, MarkersDB::class.java, "MarkersDB.db")
-                .allowMainThreadQueries()
                 .build()
     }
 }

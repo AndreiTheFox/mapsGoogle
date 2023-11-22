@@ -9,5 +9,4 @@
     app:defaultNavHost="true"
     app:navGraph = "@navigation/nav_main"
     android:id= "@+id/nav_graph">
-
 </fragment>

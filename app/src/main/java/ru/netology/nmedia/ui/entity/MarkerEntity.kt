@@ -11,7 +11,7 @@ data class MarkerEntity(
     val title: String = "",
     val position: String = "",
     val tag: String = "",
-    val googleId: String
+//    val googleId: String
 ) {
     fun toDto() =
         MyMarker(
@@ -19,7 +19,7 @@ data class MarkerEntity(
             title = title,
             position = position,
             tag = tag,
-            googleId = googleId
+//            googleId = googleId
         )
 
     companion object {
@@ -29,7 +29,7 @@ data class MarkerEntity(
                 title = dto.title,
                 position = dto.position,
                 tag = dto.tag,
-                googleId = dto.googleId
+//                googleId = dto.googleId
             )
     }
 }
